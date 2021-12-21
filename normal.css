@@ -1,0 +1,40 @@
+body{
+	background-color: #2F4858;
+	font-family: 'Fira Mono', monospace;
+	color: #924848;
+}
+h1{
+	justify-content: center;
+	font-size: 9vw;
+	text-align: center;
+	color: #F1F1E6;
+}
+h2{
+	align-content: left;
+	white-space: pre-line;
+	font-size: 5vw;
+	text-align: center;
+	text-decoration: underline;
+}
+.clue-list{
+	color: #EB9928;
+	font-size: 3vw;
+}
+.pista-exp{
+	color: #9BAEBC;
+	font-size: 2vw;
+}
+#volver{
+	cursor: pointer;
+	font-size: 5vw;	
+}
+#volver:hover, #volver:focus{
+	color: #487E91;
+}
+a#tba{
+	color: #296750;
+	font-size: 2vw;
+}
+a#tba:hover, a#tba:focus{
+	color: #8B4A48;
+}

@@ -1,0 +1,17 @@
+body{
+  	font-family: 'Fira Mono', monospace;
+	background-color: #924848;
+	color: #2F4858;
+}
+p{
+	align-content: left;
+	white-space: pre-line;
+	font-size: 5vw;
+}
+#volver{
+	cursor: pointer;
+	font-size: 5vw;	
+}
+#volver:hover, #volver:focus{
+	color: #487E91;
+}

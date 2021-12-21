@@ -1,0 +1,112 @@
+body{
+	background-color: #564145;
+	font-family: 'Fira Mono', monospace;
+	color: #924848;
+}
+h1{
+	justify-content: center;
+	font-size: 8vw;
+	text-align: center;
+	color: #F1F1E6;
+}
+h2{
+	color: #487E91;
+	align-content: left;
+	white-space: pre-line;
+	font-size: 5vw;
+	text-align: center;
+	text-decoration: underline;
+}
+ol{
+	padding-left: 5vw;
+	color: #EB9928;
+	font-size: 3vw;
+}
+.clue-link{
+	color: inherit;
+}
+.clue-link:hover{
+	color: white;
+}
+@keyframes glitch-animation{
+	2%,64%{
+    	transform: translate(1px,0) skew(0deg);
+  	}
+	4%,60%{
+		transform: translate(-1px,0) skew(0deg);
+	}
+	62%{
+    	transform: translate(0,0) skew(5deg); 
+  	}
+}
+
+#glitch-text{
+	font-size: 10vw;
+	color: inherit;
+  	text-decoration: inherit;
+  	transition: color 0.1s ease-in;
+}
+#glitch-text:focus, #glitch-text:hover{
+	color: red;
+}
+#glitch-text:before,
+#glitch-text:after{
+  content: attr(title);
+  position: absolute;
+}
+#glitch-text:after{
+	left: 27.7%;
+}
+
+#glitch-text:before{
+  	animation: glitchTop 1s linear infinite;
+  	clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  	-webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+@keyframes glitchTop{
+  	2%,64%{
+    	transform: translate(1px,-1px);
+  	}
+  	4%,60%{
+    	transform: translate(-1px,1px);
+  	}
+  	62%{
+    	transform: translate(6px,-1px) skew(-13deg); 
+  	}
+}
+
+#glitch-text:after{
+  	animation: glitchBotom 1.5s linear infinite;
+  	clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  	-webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+@keyframes glitchBotom{
+  	2%,64%{
+    	transform: translate(-1px,0);
+  	}
+  	4%,60%{
+    	transform: translate(-1px,0);
+  	}
+  	62%{
+    	transform: translate(-11px,3px) skew(21deg); 
+  	}
+}
+
+#clue-gif{
+	width: 80vw;
+}
+
+#volver{
+	cursor: pointer;
+	font-size: 5vw;	
+}
+#volver:hover, #volver:focus{
+	color: #487E91;
+}
+a#tba{
+	color: #296750;
+	font-size: 2vw;
+}
+a#tba:hover, a#tba:focus{
+	color: #8B4A48;
+}
