@@ -21,6 +21,9 @@ p{
 	white-space: pre-line;
 	font-size: 5vw;
 }
+ul{
+	left: 0;
+}
 li{
 	text-align: left;
 	display: table-row;
